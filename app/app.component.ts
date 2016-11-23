@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h3>Hello {{title}}</h3>
+  template: `<h3>{{title}}</h3>
             <input [(ngModel)]="input" (ngModelChange)='cal()' placeholer='6+6'><br>
             <label><span style='color:green;' >Result:</span>{{res}}</label> <br>
             <button (click)='cal()' >OK</button>
   `
 })
 export class AppComponent { 
-    title = 'xDays';
+    title = 'Simple Calculator';
     input = ''
     res = 0;
 
